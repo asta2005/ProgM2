@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+
+   php:
+   image: wodby/php:latest
+   volumes:
+      - './:/www/html'
+   depends_on:
+   - mariadb
